@@ -43,7 +43,7 @@ function changeDirection(e){
 function appendTail(count = 1){
 	for(;count>=1;count--){
 		var tail = new GameObject(gameZone);
-		tail.setSource('D:/KIRILLSFOLDER/SitesMaking/Projects/Snake/Images/Snake.png');
+		tail.setSource('D:/KIRILLSFOLDER/SitesMaking/Projects/Snake1/Images/Snake.png');
 		tail.setScale(15,15);
 		snake.push(tail);
 	}
@@ -55,7 +55,7 @@ function eatApple(){
 function createApple(count = 1){
 	for(;count>=1;count--){
 		apple = new GameObject(gameZone);
-		apple.setSource('D:/KIRILLSFOLDER/SitesMaking/Projects/Snake/Images/Apple.png');
+		apple.setSource('D:/KIRILLSFOLDER/SitesMaking/Projects/Snake1/Images/Apple.png');
 		apple.setScale(15,15);
 		apple.setPosition(randomInt(0,gameZone.Size.x/snakeStep)*snakeStep,randomInt(0,gameZone.Size.y/snakeStep)*snakeStep)
 	}
